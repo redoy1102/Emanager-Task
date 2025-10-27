@@ -1,10 +1,14 @@
 import express from 'express';
+import cors from 'cors';
 import mongoose from 'mongoose';
 import orderRoutes from './routes/orderRoutes';
 import errorHandler from './middleware/errorHandler';
 import connectDB from './config/database';
 
 const app = express();
+
+// CORS middleware
+app.use(cors());
 
 // Middleware
 app.use(express.json());
