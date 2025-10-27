@@ -1,0 +1,26 @@
+{
+  "name": "express-mongoose-server",
+  "version": "1.0.0",
+  "description": "A simple Express server with Mongoose for storing orders.",
+  "main": "src/server.ts",
+  "scripts": {
+    "start": "ts-node src/server.ts",
+    "dev": "ts-node-dev src/server.ts",
+    "build": "tsc",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.21.2",
+    "mongoose": "^5.10.9"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.4",
+    "ts-node": "^9.1.1",
+    "ts-node-dev": "^1.0.0",
+    "typescript": "^4.1.2"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  }
+}
